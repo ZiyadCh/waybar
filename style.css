@@ -1,8 +1,10 @@
 window#waybar {
   background-color: #000;
   color: cyan;
-  font-family: "Hurmit Nerd Font"
+  font-family: "Hurmit Nerd Font";
+  font-size: 18px;
 }
+
 
 #workspaces button.active{
   color: cyan;
@@ -15,6 +17,7 @@ window#waybar {
   color: white;
 }
 
+
 .modules-right *{
   margin: 8px;
 }
@@ -23,4 +26,30 @@ window#waybar {
   color: green;
 }
 
+.modules-right #custom-power{
+  color: red;
+  border-radius: 100%;
+  padding: 0 16px;
 
+
+  min-width: 16px;
+  min-height: 16px;
+}
+
+.modules-right #custom-power:hover{
+  color: black;
+  background-color: red;
+}
+
+#pulseaudio,
+#network,
+#battery,
+#clock,
+#cpu,
+#memory,
+#custom-power {
+  margin:10px;
+  padding:10px;
+  background-color: #1e1e2e;
+  transition: all 0.3s ease;
+}

@@ -1,91 +1,103 @@
 {
-    "layer": "top",
-    "position": "top",
-    "height": 30,
+  "layer": "top",
+  "position": "top",
+  "height": 40,
+  "spacing": 2,
+  "exclusive": true,
+  "gtk-layer-shell": true,
+  "passthrough": false,
+  "fixed-center": true,
 
-    "modules-left": [
-        "ext/workspaces",
-        "dwl/window"
-    ],
+  "modules-left": [
+    "ext/workspaces",
+    "dwl/window"
+  ],
 
-    "modules-center": [
-        "clock"
-    ],
+  "modules-center": [
+    "clock",
+    "clock#simpleclock",
+  ],
 
-    "modules-right": [
-        "pulseaudio",
-        "network",
-        "backlight",
-        "battery",
-        "custom/power",
-        "tray"
-    ],
+  "modules-right": [
+    "cpu",
+    "memory",
+    "pulseaudio",
+    "tray",
+    "custom/notification",
+    "custom/power"
+  ],
 
-    "ext/workspaces": {
-        "format": "{icon}",
-        "format-icons": {
-            "1": "●",
-            "2": "●",
-            "3": "●",
-            "4": "●",
-            "5": "●",
-            "6": "●",
-            "7": "●",
-            "8": "●",
-            "9": "●"
-        },
-        "ignore-hidden": true,
-        "on-click": "activate",
-        "on-click-right": "deactivate",
-        "sort-by-id": true
+  "ext/workspaces": {
+    "on-click": "activate",
+    "format": "{icon}",
+    "format-icons": {
+      "1": "1",
+      "2": "2",
+      "3": "3",
+      "4": "4",
+      "5": "5",
+      "6": "6",
+      "7": "7",
+      "8": "8",
+      "9": "9"
     },
+    "ignore-hidden": true,
+    "sort-by-id": true
+  },
 
-    "dwl/window": {
-        "format": " {title}"
+  "dwl/window": {
+    "format": "{title}"
+  },
+
+  "tray": {
+    "show-passive-items": true,
+    "spacing": 10
+  },
+
+  "clock#simpleclock": {
+    "tooltip": false,
+    "format": " {:%H:%M}"
+  },
+
+  "clock": {
+    "format": " {:L%a %d %b}",
+    "tooltip-format": "{calendar}"
+  },
+
+  "cpu": {
+    "format": " {usage}%",
+    "interval": 1
+  },
+
+  "memory": {
+    "format": " {used:0.1f}Gi"
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " muted",
+    "format-icons": {
+      "default": ["", "", ""]
     },
+    "on-click": "pavucontrol"
+  },
 
-    "clock": {
-        "format": "󰦖 {:%H:%M}"
+  "custom/notification": {
+    "exec": "swaync-client -swb",
+    "exec-if": "which swaync-client",
+    "format": "{icon}",
+    "format-icons": {
+      "none": "󰅺",
+      "notification": "󰡟"
     },
+    "on-click": "swaync-client -t -sw",
+    "return-type": "json",
+    "tooltip": false
+  },
 
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "format-muted": "󰖁 muted",
-        "format-icons": {
-            "low": "",
-            "medium": "󰕾",
-            "high": ""
-        }
-    },
-
-    "network": {
-        "format-wifi": "󰖩",
-        "format-ethernet": "ETH",
-        "format-disconnected": "󰤮"
-    },
-
-    "backlight": {
-        "format": "󰃠 {percent}%"
-    },
-
-    "battery": {
-        "format": "{icon} {capacity}%",
-        "format-icons": [
-            "",
-            "",
-            "",
-            "",
-            ""
-        ]
-    },
-
-    "custom/power": {
-        "format": "⏼",
-        "tooltip": false,
-        "on-click": "wlogout"
-    },
-
-    "tray": {
-        "spacing": 8
-    }
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": false,
+    "on-click": "wlogout -p layer-shell &"
+  }
 }
