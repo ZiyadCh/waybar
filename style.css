@@ -1,46 +1,41 @@
 window#waybar {
-  background-color: #000;
-  color: cyan;
+  background-color: #1e1e2e; /* base */
+  color: #cdd6f4;            /* text */
   font-family: "Hurmit Nerd Font";
-  font-size: 18px;
+  font-size: 16px; /* was 18px */
 }
 
-
-#workspaces button.active{
-  color: cyan;
-    padding-left: 12px;
-    padding-right: 2px;
+#custom-icon{
+  padding: 8px;
+  font-size:40px;
+  color: #89b4fa;
+}
+/* WORKSPACES */
+*{
+  font-weight: 900;
 }
 
-#workspaces button.empty{
-  background-color: #000;
-  color: white;
+#workspaces button {
+  color: #6c7086; /* inactive dim */
+  transition: all 0.25s ease;
+  font-size:25px;
+  font-weight:900;
 }
 
+/* ACTIVE = filled / bright */
+#workspaces button.active {
+  color: #89b4fa;
+  font-size:30px;
+  /* border-bottom: double 4px #89b4fa; */
 
-.modules-right *{
-  margin: 8px;
 }
 
-.modules-right #battery{
-  color: green;
+/* RIGHT SIDE GLOBAL SPACING */
+.modules-right * {
+  margin: 6px; /* was 8px */
 }
 
-.modules-right #custom-power{
-  color: red;
-  border-radius: 100%;
-  padding: 0 16px;
-
-
-  min-width: 16px;
-  min-height: 16px;
-}
-
-.modules-right #custom-power:hover{
-  color: black;
-  background-color: red;
-}
-
+/* UNIFIED RIGHT MODULE STYLE */
 #pulseaudio,
 #network,
 #battery,
@@ -48,8 +43,60 @@ window#waybar {
 #cpu,
 #memory,
 #custom-power {
-  margin:10px;
-  padding:10px;
-  background-color: #1e1e2e;
+  margin: 8px;        /* was 10px */
+  padding: 12px;      /* was 16px */
+
+  color: #cdd6f4;
+
+  border-radius: 40px; /* slightly tighter */
+
   transition: all 0.3s ease;
+}
+
+/* BATTERY */
+#battery {
+  color: #a6e3a1; /* green */
+}
+
+/* POWER BUTTON */
+#custom-power {
+  color: #f38ba8; /* red */
+
+  min-width: 16px;
+  min-height: 16px;
+}
+
+/* POWER HOVER */
+#custom-power:hover {
+  color: #1e1e2e;
+  background-color: #f38ba8;
+}
+
+/* MODULE COLORS */
+#pulseaudio {
+  color: #cba6f7;
+}
+
+#network {
+  color: #89b4fa;
+}
+
+#clock {
+  color: #74c7ec;
+}
+
+#cpu {
+  color: #94e2d5;
+}
+
+#memory {
+  color: #f5c2e7;
+}
+
+#custom-separator {
+  color: #6c7086;
+  margin: 0 ;
+  padding: 0;
+  background: transparent;
+  font-size: 20px
 }
