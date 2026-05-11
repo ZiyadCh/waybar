@@ -1,0 +1,26 @@
+window#waybar {
+  background-color: #000;
+  color: cyan;
+  font-family: "Hurmit Nerd Font"
+}
+
+#workspaces button.active{
+  color: cyan;
+    padding-left: 12px;
+    padding-right: 2px;
+}
+
+#workspaces button.empty{
+  background-color: #000;
+  color: white;
+}
+
+.modules-right *{
+  margin: 8px;
+}
+
+.modules-right #battery{
+  color: green;
+}
+
+

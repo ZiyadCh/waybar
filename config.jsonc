@@ -1,0 +1,91 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+
+    "modules-left": [
+        "ext/workspaces",
+        "dwl/window"
+    ],
+
+    "modules-center": [
+        "clock"
+    ],
+
+    "modules-right": [
+        "pulseaudio",
+        "network",
+        "backlight",
+        "battery",
+        "custom/power",
+        "tray"
+    ],
+
+    "ext/workspaces": {
+        "format": "{icon}",
+        "format-icons": {
+            "1": "●",
+            "2": "●",
+            "3": "●",
+            "4": "●",
+            "5": "●",
+            "6": "●",
+            "7": "●",
+            "8": "●",
+            "9": "●"
+        },
+        "ignore-hidden": true,
+        "on-click": "activate",
+        "on-click-right": "deactivate",
+        "sort-by-id": true
+    },
+
+    "dwl/window": {
+        "format": " {title}"
+    },
+
+    "clock": {
+        "format": "󰦖 {:%H:%M}"
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰖁 muted",
+        "format-icons": {
+            "low": "",
+            "medium": "󰕾",
+            "high": ""
+        }
+    },
+
+    "network": {
+        "format-wifi": "󰖩",
+        "format-ethernet": "ETH",
+        "format-disconnected": "󰤮"
+    },
+
+    "backlight": {
+        "format": "󰃠 {percent}%"
+    },
+
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+
+    "custom/power": {
+        "format": "⏼",
+        "tooltip": false,
+        "on-click": "wlogout"
+    },
+
+    "tray": {
+        "spacing": 8
+    }
+}
