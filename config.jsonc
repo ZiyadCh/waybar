@@ -21,7 +21,8 @@
   "modules-left": [
     "custom/icon",
     "ext/workspaces",
-    "dwl/window"
+    "dwl/window",
+    "tray"
   ],
 
   "modules-center": [
@@ -31,14 +32,12 @@
   ],
 
   "modules-right": [
-    "custom/separator",
     "cpu",
     "custom/separator",
     "pulseaudio",
     "custom/separator",
     "backlight",
     "custom/separator",
-    "tray",
     "network",
     "custom/separator",
     "battery",
@@ -62,7 +61,8 @@
   "network": {
     "format-wifi": "󰖩 {essid}",
     "format-ethernet": "󰈀 ETH",
-    "format-disconnected": "󰖪 OFF"
+    "format-disconnected": "󰖪 OFF",
+    "on-click": "kitty nmtui"
   },
 
   "backlight": {
@@ -123,6 +123,6 @@
   "custom/power": {
     "format": "⏻",
     "tooltip": false,
-    "on-click": "wlogout -p layer-shell &"
+    "on-click": "wlogout -b 4 &"
   }
 }
