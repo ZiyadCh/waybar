@@ -5,10 +5,16 @@ window#waybar {
   font-size: 18px; /* was 18px */
   
 }
+#dwl{
+    margin-right: 10px;
+    padding: 0 10px;
+    color: #cdd6f4; /* Catppuccin Text color */
+    background: transparent;
+}
 
 #custom-icon{
   padding: 8px;
-  font-size:40px;
+  font-size:30px;
   color: #89b4fa;
 }
 /* WORKSPACES */
@@ -43,14 +49,11 @@ window#waybar {
 #clock,
 #cpu,
 #memory,
+#backlight,
 #custom-power {
-  margin: 8px;        /* was 10px */
+  margin: 0px;        /* was 10px */
   padding: 12px;      /* was 16px */
-
-  color: #cdd6f4;
-
-  border-radius: 40px; /* slightly tighter */
-
+  color: #ff9694;
   transition: all 0.3s ease;
 }
 
@@ -58,40 +61,71 @@ window#waybar {
 #battery {
   color: #a6e3a1; /* green */
 }
+#battery:hover {
+  background-color: #a6e3a1; /* green */
+  color: #0a0a1e;
+}
 
 /* POWER BUTTON */
 #custom-power {
   color: #f38ba8; /* red */
 
   min-width: 16px;
-  min-height: 16px;
+  min-height: 5px;
 }
 
 /* POWER HOVER */
 #custom-power:hover {
   color: #1e1e2e;
-  background-color: #f38ba8;
+  background-color: #ff7777;
 }
 
 /* MODULE COLORS */
 #pulseaudio {
   color: #cba6f7;
 }
+#pulseaudio:hover {
+  background-color: #cba6f7;
+  color: #0a0a1e;
+}
 
 #network {
   color: #89b4fa;
+}
+#network:hover {
+  background-color: #89b4fa;
+  color: #0a0a1e;
 }
 
 #clock {
   color: #74c7ec;
 }
+#clock:hover {
+  background-color:#74c7ec;
+  color: #0a0a1e;
+}
 
 #cpu {
   color: #94e2d5;
 }
+#cpu:hover {
+  background-color:#94e2d5;
+  color: #0a0a1e;
+}
 
 #memory {
   color: #f5c2e7;
+}
+#cpu:hover {
+  background-color: #f5c2e7;
+  color: #0a0a1e;
+}
+#backlight{
+  color: #fff;
+}
+#backlight:hover{
+  background-color: #fff;
+  color: #0a0a1e;
 }
 
 #custom-separator {

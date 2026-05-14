@@ -9,12 +9,12 @@
   "fixed-center": true,
 
   "custom/separator": {
-    "format": "/",
+    "format": "╏",
     "tooltip": false
   },
 
   "custom/icon": {
-    "format": "☯",
+    "format": " ",
     "tooltip": false
   },
 
@@ -89,7 +89,11 @@
   },
 
   "dwl/window": {
-    "format": "{title}"
+    "format": "{title}",
+    "max-length": "20",
+"rewrite": {
+        "": "Clean",
+    }
   },
 
   "tray": {
