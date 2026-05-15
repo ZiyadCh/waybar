@@ -1,5 +1,5 @@
 window#waybar {
-  background-color: #0a0a1e; /* base */
+  background-color: #000; /* base */
   color: #cdd6f4;            /* text */
   font-family: "Hurmit Nerd Font";
   font-size: 18px; /* was 18px */
@@ -56,82 +56,106 @@ window#waybar {
   color: #ff9694;
   transition: all 0.3s ease;
 }
-
-/* BATTERY */
-#battery {
-  color: #a6e3a1; /* green */
-}
-#battery:hover {
-  background-color: #a6e3a1; /* green */
-  color: #0a0a1e;
-}
-
-/* POWER BUTTON */
-#custom-power {
-  color: #f38ba8; /* red */
-
-  min-width: 16px;
-  min-height: 5px;
-}
-
-/* POWER HOVER */
-#custom-power:hover {
-  color: #1e1e2e;
-  background-color: #ff7777;
-}
-
-/* MODULE COLORS */
 #pulseaudio {
   color: #cba6f7;
+  text-shadow: 0 0 8px #cba6f7;
 }
 #pulseaudio:hover {
   background-color: #cba6f7;
   color: #0a0a1e;
+  text-shadow:
+    0 0 5px #0a0a1e,
+    0 0 10px #0a0a1e,
+    0 0 20px #0a0a1e;
 }
 
 #network {
   color: #89b4fa;
+  text-shadow: 0 0 8px #89b4fa;
 }
 #network:hover {
   background-color: #89b4fa;
   color: #0a0a1e;
+  text-shadow:
+    0 0 5px #0a0a1e,
+    0 0 10px #0a0a1e,
+    0 0 20px #0a0a1e;
 }
 
 #clock {
   color: #74c7ec;
+  text-shadow: 0 0 8px #74c7ec;
 }
 #clock:hover {
-  background-color:#74c7ec;
+  background-color: #74c7ec;
   color: #0a0a1e;
+  text-shadow:
+    0 0 5px #0a0a1e,
+    0 0 10px #0a0a1e,
+    0 0 20px #0a0a1e;
 }
 
 #cpu {
   color: #94e2d5;
+  text-shadow: 0 0 8px #94e2d5;
 }
 #cpu:hover {
-  background-color:#94e2d5;
+  background-color: #94e2d5;
   color: #0a0a1e;
+  text-shadow:
+    0 0 5px #0a0a1e,
+    0 0 10px #0a0a1e,
+    0 0 20px #0a0a1e;
 }
 
 #memory {
   color: #f5c2e7;
+  text-shadow: 0 0 8px #f5c2e7;
 }
-#cpu:hover {
+#memory:hover {
   background-color: #f5c2e7;
   color: #0a0a1e;
-}
-#backlight{
-  color: #fff;
-}
-#backlight:hover{
-  background-color: #fff;
-  color: #0a0a1e;
+  text-shadow:
+    0 0 5px #0a0a1e,
+    0 0 10px #0a0a1e,
+    0 0 20px #0a0a1e;
 }
 
-#custom-separator {
-  color: #6c7086;
-  margin: 0 ;
-  padding: 0;
-  background: transparent;
-  font-size: 20px
+#battery {
+  color: #a6e3a1;
+  text-shadow: 0 0 8px #a6e3a1;
+}
+#battery:hover {
+  background-color: #a6e3a1;
+  color: #0a0a1e;
+  text-shadow:
+    0 0 5px #0a0a1e,
+    0 0 10px #0a0a1e,
+    0 0 20px #0a0a1e;
+}
+
+#backlight {
+  color: #fff;
+  text-shadow: 0 0 8px #fff;
+}
+#backlight:hover {
+  background-color: #fff;
+  color: #0a0a1e;
+  text-shadow:
+    0 0 5px #0a0a1e,
+    0 0 10px #0a0a1e,
+    0 0 20px #0a0a1e;
+}
+
+#custom-power {
+  color: #f38ba8;
+  text-shadow: 0 0 8px #f38ba8;
+}
+#custom-power:hover {
+  background-color: #ff7777;
+  color: #0a0a1e;
+  text-shadow:
+    0 0 5px #0a0a1e,
+    0 0 10px #0a0a1e,
+    0 0 20px #0a0a1e;
 }
