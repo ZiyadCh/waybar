@@ -1,161 +1,144 @@
 window#waybar {
-  background-color: #000; /* base */
-  color: #cdd6f4;            /* text */
   font-family: "Hurmit Nerd Font";
-  font-size: 18px; /* was 18px */
-  
-}
-#dwl{
-    margin-right: 10px;
-    padding: 0 10px;
-    color: #cdd6f4; /* Catppuccin Text color */
-    background: transparent;
+  background-color: #1e1e2e;
+  color: #cdd6f4;
+  font-size: 18px;
+  padding: 0;
 }
 
-#custom-icon{
+#dwl {
+  margin-right: 10px;
+  padding: 0 10px;
+  color: #cdd6f4;
+  background: transparent;
+}
+
+#custom-icon {
   padding: 8px;
-  font-size:30px;
+  font-size: 20px;
   color: #89b4fa;
 }
-/* WORKSPACES */
-*{
+
+* {
   font-weight: 900;
 }
 
 #workspaces button {
-  color: #6c7086; /* inactive dim */
+  color: #6c7086;
   transition: all 0.25s ease;
-  font-size:25px;
-  font-weight:900;
+  font-size: 25px;
+  font-weight: 900;
 }
 
-/* ACTIVE = filled / bright */
 #workspaces button.active {
   color: #89b4fa;
-  font-size:30px;
-  /* border-bottom: double 4px #89b4fa; */
-
+  font-size: 20px;
 }
 
-/* RIGHT SIDE GLOBAL SPACING */
-.modules-right * {
-  margin: 6px; /* was 8px */
-}
-
-/* UNIFIED RIGHT MODULE STYLE */
-#pulseaudio,
-#network,
-#battery,
-#clock,
-#cpu,
-#memory,
-#backlight,
-#custom-power {
-  margin: 0px;        /* was 10px */
-  padding: 12px;      /* was 16px */
-  color: #ff9694;
-  transition: all 0.3s ease;
-}
+/* RIGHT MODULES */
 #pulseaudio {
-  color: #cba6f7;
-  text-shadow: 0 0 8px #cba6f7;
-}
-#pulseaudio:hover {
-  background-color: #cba6f7;
-  color: #0a0a1e;
-  text-shadow:
-    0 0 5px #0a0a1e,
-    0 0 10px #0a0a1e,
-    0 0 20px #0a0a1e;
+  background: #cba6f7;  /* mauve */
+  color: #1e1e2e;
+  padding: 0 10px;
 }
 
 #network {
-  color: #89b4fa;
-  text-shadow: 0 0 8px #89b4fa;
-}
-#network:hover {
-  background-color: #89b4fa;
-  color: #0a0a1e;
-  text-shadow:
-    0 0 5px #0a0a1e,
-    0 0 10px #0a0a1e,
-    0 0 20px #0a0a1e;
-}
-
-#clock {
-  color: #74c7ec;
-  text-shadow: 0 0 8px #74c7ec;
-}
-#clock:hover {
-  background-color: #74c7ec;
-  color: #0a0a1e;
-  text-shadow:
-    0 0 5px #0a0a1e,
-    0 0 10px #0a0a1e,
-    0 0 20px #0a0a1e;
-}
-
-#cpu {
-  color: #94e2d5;
-  text-shadow: 0 0 8px #94e2d5;
-}
-#cpu:hover {
-  background-color: #94e2d5;
-  color: #0a0a1e;
-  text-shadow:
-    0 0 5px #0a0a1e,
-    0 0 10px #0a0a1e,
-    0 0 20px #0a0a1e;
-}
-
-#memory {
-  color: #f5c2e7;
-  text-shadow: 0 0 8px #f5c2e7;
-}
-#memory:hover {
-  background-color: #f5c2e7;
-  color: #0a0a1e;
-  text-shadow:
-    0 0 5px #0a0a1e,
-    0 0 10px #0a0a1e,
-    0 0 20px #0a0a1e;
+  background: #89b4fa;  /* blue */
+  color: #1e1e2e;
+  padding: 0 10px;
 }
 
 #battery {
-  color: #a6e3a1;
-  text-shadow: 0 0 8px #a6e3a1;
+  background: #a6e3a1;  /* green */
+  color: #1e1e2e;
+  padding: 0 10px;
 }
-#battery:hover {
-  background-color: #a6e3a1;
-  color: #0a0a1e;
-  text-shadow:
-    0 0 5px #0a0a1e,
-    0 0 10px #0a0a1e,
-    0 0 20px #0a0a1e;
+
+#cpu {
+  background: #94e2d5;  /* teal */
+  color: #1e1e2e;
+  padding: 0 10px;
+}
+
+#memory {
+  background: #f5c2e7;  /* pink */
+  color: #1e1e2e;
+  padding: 0 10px;
 }
 
 #backlight {
-  color: #fff;
-  text-shadow: 0 0 8px #fff;
-}
-#backlight:hover {
-  background-color: #fff;
-  color: #0a0a1e;
-  text-shadow:
-    0 0 5px #0a0a1e,
-    0 0 10px #0a0a1e,
-    0 0 20px #0a0a1e;
+  background: #f9e2af;  /* yellow */
+  color: #1e1e2e;
+  padding: 0 10px;
 }
 
 #custom-power {
-  color: #f38ba8;
+  background: #f38ba8;  /* red */
+  color: #1e1e2e;
+  padding: 0 10px;
   text-shadow: 0 0 8px #f38ba8;
 }
+
 #custom-power:hover {
-  background-color: #ff7777;
-  color: #0a0a1e;
+  background-color: #eba0ac;  /* maroon */
+  color: #1e1e2e;
   text-shadow:
-    0 0 5px #0a0a1e,
-    0 0 10px #0a0a1e,
-    0 0 20px #0a0a1e;
+    0 0 5px #1e1e2e,
+    0 0 10px #1e1e2e,
+    0 0 20px #1e1e2e;
+}
+
+/* SEPARATORS */
+#custom-memory-arrow {
+  font-size: 30px;
+  color: #f5c2e7;        /* pink */
+  background: #1e1e2e;   /* base — first arrow, no left module */
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+#custom-audio-arrow {
+  font-size: 30px;
+  color: #cba6f7;        /* mauve */
+  background: #f5c2e7;   /* pink */
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+#custom-backlight-arrow {
+  font-size: 30px;
+  color: #f9e2af;        /* yellow */
+  background: #cba6f7;   /* mauve */
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+#custom-network-arrow {
+  font-size: 30px;
+  color: #89b4fa;        /* blue */
+  background: #f9e2af;   /* yellow */
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+#custom-battery-arrow {
+  font-size: 30px;
+  color: #a6e3a1;        /* green */
+  background: #89b4fa;   /* blue */
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+#custom-power-arrow {
+  font-size: 30px;
+  color: #f38ba8;        /* red */
+  background: #a6e3a1;   /* green */
+  padding: 0;
+  margin: 0;
+  border: none;
 }

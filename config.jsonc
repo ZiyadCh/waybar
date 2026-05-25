@@ -1,75 +1,67 @@
 {
   "layer": "top",
   "position": "top",
-  "height": 10,
-  "spacing": 2,
+  "height": 30,
+  "spacing": 0,
   "exclusive": true,
   "gtk-layer-shell": true,
   "passthrough": false,
   "fixed-center": true,
-
-  "custom/separator": {
-    "format": "╏",
-    "tooltip": false
-  },
-
-  "custom/icon": {
-    "format": " ",
-    "tooltip": false
-  },
-
   "modules-left": [
+    "custom/left-arrow",
     "custom/icon",
-    "ext/workspaces",
-    "dwl/window",
-    "tray"
+    "custom/ws-arrow",
+    "ext/workspaces"
   ],
-
   "modules-center": [
-    "custom/separator",
-    "clock",
-    "custom/separator"
+    "clock"
   ],
-
   "modules-right": [
+    "custom/memory-arrow",
     "memory",
-    "custom/separator",
+    "custom/audio-arrow",
     "pulseaudio",
-    "custom/separator",
+    "custom/backlight-arrow",
     "backlight",
-    "custom/separator",
+    "custom/network-arrow",
     "network",
-    "custom/separator",
+    "custom/battery-arrow",
     "battery",
-    "custom/separator",
+    "custom/power-arrow",
     "custom/power"
   ],
-
-  "battery": {
-    "format": "{icon} {capacity}%",
-    "format-charging": "󰂄 {capacity}%",
-    "format-plugged": "󰂄 {capacity}%",
-    "format-icons": [
-      "󰁺",
-      "󰁻",
-      "󰁼",
-      "󰁽",
-      "󰁿"
-    ]
+  "custom/clock-left": {
+    "format": "",
+    "tooltip": false
   },
-
-  "network": {
-    "format-wifi": "󰖩 {essid}",
-    "format-ethernet": "󰈀 ETH",
-    "format-disconnected": "󰖪 OFF",
-    "on-click": "kitty nmtui"
+  "custom/memory-arrow": {
+    "format": "",
+    "tooltip": false
   },
-
-  "backlight": {
-    "format": "󰃠 {percent}%",
-    "tooltip": true
+  "custom/audio-arrow": {
+    "format": "",
+    "tooltip": false
   },
-
+  "custom/backlight-arrow": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/network-arrow": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/battery-arrow": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/power-arrow": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/icon": {
+    "format": "  ",
+    "tooltip": false
+  },
   "ext/workspaces": {
     "on-click": "activate",
     "format": "{icon}",
@@ -82,71 +74,91 @@
       "6": "⚅",
       "7": "⚅",
       "8": "⚅",
-      "9": "⚅",
+      "9": "⚅"
     },
     "ignore-hidden": true,
     "sort-by-id": true
   },
-
   "dwl/window": {
     "format": "{title}",
-    "max-length": "5",
-"rewrite": {
-        "": "Clean",
-        "(.*)Gemini(.*)": "Gemini",
-        "(.*)chatgpt(.*)": "Chatgpt",
-        "(.*)youtube(.*)": "Youtube",
+    "max-length": 20,
+    "rewrite": {
+      "": "Clean",
+      "(.*)Gemini(.*)": "Gemini",
+      "(.*)chatgpt(.*)": "ChatGPT",
+      "(.*)youtube(.*)": "YouTube"
     }
   },
-
   "tray": {
     "show-passive-items": true,
     "spacing": 10
   },
-
-"clock": {
-    "interval": 60,
-    "format": " {:%H:%M}",
+  "clock": {
+    "interval": 1,
+    "format": " {:%H:%M:%S}",
     "format-alt": " {:%d/%m/%Y}",
     "tooltip-format": "<tt><small>{calendar}</small></tt>",
     "calendar": {
-        "mode": "year",
-        "mode-mon-col": 3,
-        "on-scroll": 1,
-        "format": {
-            "months": "<span color='#ffead3'><b>{}</b></span>",
-            "days": "<span color='#ecc6d9'><b>{}</b></span>",
-            "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
-            "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-            "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
-        }
+      "mode": "year",
+      "mode-mon-col": 3,
+      "on-scroll": 1,
+      "format": {
+        "months": "<span color='#ffead3'><b>{}</b></span>",
+        "days": "<span color='#ecc6d9'><b>{}</b></span>",
+        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+      }
     }
-},
-
-"cpu": {
-  "format": " {usage}%",
-  "format-alt": " {used:0.1f}G",
-  "on-click": "toggle",
-  "interval": 1
-},
-
-  "memory": {
-    "format": " {used:0.1f}Gb"
   },
-
+  "cpu": {
+    "format": " {usage}%",
+    "format-alt": " {used:0.1f}G",
+    "on-click": "toggle",
+    "interval": 1
+  },
+  "memory": {
+    "format": "  {used:0.1f}GB "
+  },
   "pulseaudio": {
-    "format": "{icon} {volume}%",
-    "format-muted": " muted",
+    "format": " {icon} {volume}% ",
+    "format-muted": "  muted ",
     "format-icons": {
-      "default": ["", "", ""],
-      "headset" : "",
-      "headphone" : ""
+      "default": [
+        "",
+        "",
+        ""
+      ],
+      "headset": "",
+      "headphone": ""
     },
     "on-click": "pavucontrol"
   },
-
+  "backlight": {
+    "format": " 󰃠 {percent}% ",
+    "tooltip": true
+  },
+  "network": {
+    "format-wifi": " 󰖩 ",
+    "format-ethernet": " 󰈀 ETH ",
+    "format-disconnected": " 󰖪 OFF ",
+    "on-click": "kitty nmtui",
+    "tooltip-format": "{essid}"
+  },
+  "battery": {
+    "format": " {icon} {capacity}% ",
+    "format-charging": " 󰂄 {capacity}% ",
+    "format-plugged": " 󰂄 {capacity}% ",
+    "format-icons": [
+      "󰁺",
+      "󰁻",
+      "󰁼",
+      "󰁽",
+      "󰁿"
+    ]
+  },
   "custom/power": {
-    "format": "⏻",
+    "format": " ⏻ ",
     "tooltip": false,
     "on-click": "wlogout -b 4 &"
   }
