@@ -1,8 +1,8 @@
 window#waybar {
-  font-family: "Hurmit Nerd Font";
-  background-color: #1e1e2e;
+  font-family: "Hurmit Nerd Font Light";
+  background-color: #001;
   color: #cdd6f4;
-  font-size: 18px;
+  font-size: 16px;
   padding: 0;
 }
 
@@ -14,8 +14,7 @@ window#waybar {
 }
 
 #custom-icon {
-  padding: 8px;
-  font-size: 20px;
+  font-size: 30px;
   color: #89b4fa;
 }
 
@@ -32,112 +31,93 @@ window#waybar {
 
 #workspaces button.active {
   color: #89b4fa;
-  font-size: 20px;
 }
-
 /* RIGHT MODULES */
 #pulseaudio {
-  background: #cba6f7;  /* mauve */
-  color: #1e1e2e;
+  background: #1a3a5c;
+  color: #a8c4e0;
   padding: 0 10px;
 }
-
 #network {
-  background: #89b4fa;  /* blue */
-  color: #1e1e2e;
+  background: #1f5f9e;
+  color: #daeaf8;
   padding: 0 10px;
 }
-
 #battery {
-  background: #a6e3a1;  /* green */
-  color: #1e1e2e;
+  background: #2272bc;
+  color: #e8f2fc;
   padding: 0 10px;
 }
-
 #cpu {
-  background: #94e2d5;  /* teal */
-  color: #1e1e2e;
+  background: #163060;
+  color: #c0d8f0;
   padding: 0 10px;
 }
-
 #memory {
-  background: #f5c2e7;  /* pink */
-  color: #1e1e2e;
+  background: #0d1f3c;
+  color: #a8c4e0;
   padding: 0 10px;
 }
-
 #backlight {
-  background: #f9e2af;  /* yellow */
-  color: #1e1e2e;
+  background: #1e4d78;
+  color: #c8dcf0;
   padding: 0 10px;
 }
-
 #custom-power {
-  background: #f38ba8;  /* red */
-  color: #1e1e2e;
+  background: #3a8fd1;
+  color: #f0f8ff;
   padding: 0 10px;
-  text-shadow: 0 0 8px #f38ba8;
+  text-shadow: none;
 }
-
 #custom-power:hover {
-  background-color: #eba0ac;  /* maroon */
-  color: #1e1e2e;
-  text-shadow:
-    0 0 5px #1e1e2e,
-    0 0 10px #1e1e2e,
-    0 0 20px #1e1e2e;
+  text-shadow: 10px 10px 10px #f0f8ff;
 }
 
 /* SEPARATORS */
 #custom-memory-arrow {
   font-size: 30px;
-  color: #f5c2e7;        /* pink */
-  background: #1e1e2e;   /* base — first arrow, no left module */
+  color: #0d1f3c;
+  background-color: #001;
   padding: 0;
   margin: 0;
   border: none;
 }
-
 #custom-audio-arrow {
   font-size: 30px;
-  color: #cba6f7;        /* mauve */
-  background: #f5c2e7;   /* pink */
+  color: #1a3a5c;
+  background: #0d1f3c;
   padding: 0;
   margin: 0;
   border: none;
 }
-
 #custom-backlight-arrow {
   font-size: 30px;
-  color: #f9e2af;        /* yellow */
-  background: #cba6f7;   /* mauve */
+  color: #1e4d78;
+  background: #1a3a5c;
   padding: 0;
   margin: 0;
   border: none;
 }
-
 #custom-network-arrow {
   font-size: 30px;
-  color: #89b4fa;        /* blue */
-  background: #f9e2af;   /* yellow */
+  color: #1f5f9e;
+  background: #1e4d78;
   padding: 0;
   margin: 0;
   border: none;
 }
-
 #custom-battery-arrow {
   font-size: 30px;
-  color: #a6e3a1;        /* green */
-  background: #89b4fa;   /* blue */
+  color: #2272bc;
+  background: #1f5f9e;
   padding: 0;
   margin: 0;
   border: none;
 }
-
 #custom-power-arrow {
   font-size: 30px;
-  color: #f38ba8;        /* red */
-  background: #a6e3a1;   /* green */
+  color: #3a8fd1;
+  background: #2272bc;
   padding: 0;
   margin: 0;
   border: none;
