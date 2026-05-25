@@ -43,6 +43,10 @@ window#waybar {
   color: #daeaf8;
   padding: 0 10px;
 }
+
+#network:hover {
+  text-shadow: 0px 0px 5px #000;
+}
 #battery {
   background: #2272bc;
   color: #e8f2fc;
@@ -70,7 +74,7 @@ window#waybar {
   text-shadow: none;
 }
 #custom-power:hover {
-  text-shadow: 10px 10px 10px #f0f8ff;
+  text-shadow: 0px 0px 5px #000;
 }
 
 /* SEPARATORS */

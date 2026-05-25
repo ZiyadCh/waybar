@@ -60,7 +60,8 @@
   },
   "custom/icon": {
     "format": "  ",
-    "tooltip": false
+    "tooltip": false,
+    "on-click": "rofi -show drun -theme ~/.config/rofi/theme.rasi"
   },
   "ext/workspaces": {
     "on-click": "activate",
