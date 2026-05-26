@@ -10,7 +10,8 @@
   "modules-left": [
     "custom/icon",
     "custom/icon-arrow",
-    "ext/workspaces"
+    "ext/workspaces",
+    "custom/workspaces-arrow"
   ],
   "modules-center": [
     "clock"
@@ -31,6 +32,10 @@
   ],
 
   "custom/icon-arrow": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/workspaces-arrow": {
     "format": "",
     "tooltip": false
   },
