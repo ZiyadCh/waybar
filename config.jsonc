@@ -8,10 +8,10 @@
   "passthrough": false,
   "fixed-center": true,
   "modules-left": [
-    "custom/left-arrow",
     "custom/icon",
-    "custom/ws-arrow",
-    "ext/workspaces"
+    "custom/icon-arrow",
+    "ext/workspaces",
+    "custom/workspaces-arrow"
   ],
   "modules-center": [
     "clock"
@@ -30,8 +30,12 @@
     "custom/power-arrow",
     "custom/power"
   ],
-  "custom/clock-left": {
-    "format": "",
+  "custom/icon-arrow": {
+    "format": "",
+    "tooltip": false
+  },
+  "custom/workspaces-arrow": {
+    "format": "",
     "tooltip": false
   },
   "custom/memory-arrow": {
