@@ -1,5 +1,5 @@
 window#waybar {
-  font-family: "Hurmit Nerd Font Light";
+  font-family: "firacode nerd font ";
   background-color: #001;
   color: #cdd6f4;
   font-size: 16px;
@@ -16,6 +16,15 @@ window#waybar {
 #custom-icon {
   font-size: 30px;
   color: #89b4fa;
+  background: #224;
+}
+
+#custom-icon-arrow {
+  font-size: 30px;
+  color: #224;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
 }
 
 * {
