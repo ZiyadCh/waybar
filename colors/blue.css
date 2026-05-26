@@ -1,0 +1,19 @@
+
+@define-color bg0 #000508;     /* deepest background */
+@define-color bg1 #061628;     /* dark navy */
+@define-color bg2 #0a2444;     /* deep navy blue */
+@define-color bg3 #0e3060;     /* medium navy */
+@define-color bg4 #124588;    /* mid blue */
+@define-color bg5 #1a5eaa;     /* medium blue */
+@define-color bg6 #1f78d4;     /* bright blue */
+@define-color bg7 #3d9ee8;     /* light blue (power) */
+
+@define-color fg0 #d8eaff;     /* primary text */
+@define-color fg1 #aaccee;     /* muted blue-white */
+@define-color fg2 #bcd8f4;     /* light blue-white */
+@define-color fg3 #c8e0f8;     /* soft blue-white */
+@define-color fg4 #d8eeff;     /* pale blue */
+@define-color fg5 #eaf4ff;     /* near-white */
+@define-color fg6 #f0f8ff;     /* brightest (power) */
+@define-color fg7 #546080;     /* inactive workspace */
+@define-color fg8 #60aaff;     /* active/accent blue */
