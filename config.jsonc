@@ -12,6 +12,8 @@
     "custom/icon-arrow",
     "ext/workspaces",
     "custom/workspaces-arrow"
+    // "wlr/taskbar",
+    // "custom/taskbar-arrow"
   ],
   "modules-center": [
     "clock"
@@ -30,6 +32,10 @@
     "custom/power-arrow",
     "custom/power"
   ],
+  "custom/taskbar-arrow": {
+    "format": "",
+    "tooltip": false
+  },
   "custom/icon-arrow": {
     "format": "",
     "tooltip": false
@@ -96,6 +102,7 @@
   },
   "tray": {
     "show-passive-items": true,
+    "icon-size": 18,
     "spacing": 10
   },
   "clock": {
@@ -108,11 +115,11 @@
       "mode-mon-col": 3,
       "on-scroll": 1,
       "format": {
-        "months": "<span color='#ffead3'><b>{}</b></span>",
-        "days": "<span color='#ecc6d9'><b>{}</b></span>",
-        "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
-        "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
-        "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+        "months": "<span color='#cdd6f4'><b>{}</b></span>",
+        "days": "<span color='#bac2de'>{}</span>",
+        "weeks": "<span color='#89b4fa'><b>W{}</b></span>",
+        "weekdays": "<span color='#f9e2af'>{}</span>",
+        "today": "<span color='#f38ba8'><b><u>{}</u></b></span>"
       }
     }
   },
@@ -161,6 +168,14 @@
       "󰁽",
       "󰁿"
     ]
+  },
+  "wlr/taskbar": {
+    "format": "{icon}",
+    "icon-size": 18,
+    "tooltip-format": "{title}",
+    "on-click": "activate",
+    "on-click-middle": "close",
+    "all-outputs": true
   },
   "custom/power": {
     "format": " ⏻ ",
