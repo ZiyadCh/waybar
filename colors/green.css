@@ -1,0 +1,18 @@
+@define-color bg0 #020903;     /* deepest background */
+@define-color bg1 #081406;     /* dark forest green */
+@define-color bg2 #10220b;     /* deep green */
+@define-color bg3 #183514;     /* medium dark green */
+@define-color bg4 #24501f;     /* mid green */
+@define-color bg5 #34702d;     /* medium green */
+@define-color bg6 #4b9d40;     /* bright green */
+@define-color bg7 #75d864;     /* light green */
+
+@define-color fg0 #e6ffdf;     /* primary text */
+@define-color fg1 #ccebbf;     /* muted green-white */
+@define-color fg2 #d8f3cb;     /* light green-white */
+@define-color fg3 #e1f8d8;     /* soft green-white */
+@define-color fg4 #e9fbe4;     /* pale green */
+@define-color fg5 #f2fdf0;     /* near-white */
+@define-color fg6 #fbfffa;     /* brightest */
+@define-color fg7 #5a7050;     /* inactive */
+@define-color fg8 #7dff5a;     /* active accent green */
