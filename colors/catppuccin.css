@@ -1,0 +1,24 @@
+/* === Catppuccin Background Gradient with Light Magenta-Blue FGs (RGBA) === */
+
+/* Catppuccin Dark Gradient Backgrounds (Solid RGBA) */
+@define-color bg0 rgba(17, 17, 27, 0.5);     /* crust - deepest background */
+@define-color bg1 rgba(24, 24, 37, 1.0);     /* mantle - dark gradient step */
+@define-color bg2 rgba(30, 30, 46, 1.0);     /* base - standard dark background */
+@define-color bg3 rgba(49, 50, 68, 1.0);     /* surface0 - medium dark step */
+@define-color bg4 rgba(69, 71, 90, 1.0);     /* surface1 - mid dark step */
+@define-color bg5 rgba(88, 91, 112, 1.0);    /* surface2 - medium gradient step */
+@define-color bg6 rgba(108, 112, 134, 1.0);  /* overlay0 - bright dark step */
+@define-color bg7 rgba(180, 190, 254, 1.0);  /* mocha lavender - light magenta-blue gradient end */
+/* Light Magenta Leaning Blue Foreground Colors (Solid RGBA) */
+/* Shifting from bright magenta-whites down into deep purple-blues */
+
+@define-color fg0 rgba(253, 230, 255, 1.0);  /* primary text - tint of pure magenta */
+@define-color fg1 rgba(243, 218, 255, 1.0);  /* muted magenta-purple */
+@define-color fg2 rgba(230, 215, 255, 1.0);  /* balanced light purple */
+@define-color fg3 rgba(218, 215, 255, 1.0);  /* soft blue-purple */
+@define-color fg4 rgba(210, 222, 255, 1.0);  /* pale ice blue */
+@define-color fg5 rgba(235, 240, 255, 1.0);  /* near-white icy blue */
+@define-color fg6 rgba(255, 240, 250, 1.0);  /* brightest white-magenta apex */
+
+@define-color fg7 rgba(110, 85, 120, 1.0);   /* inactive muted deep purple */
+@define-color fg8 rgba(175, 130, 255, 1.0);  /* active accent vivid purple-blue */

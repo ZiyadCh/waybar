@@ -1,0 +1,18 @@
+@define-color bg0 #000806;     /* deepest background */
+@define-color bg1 #041814;     /* dark teal */
+@define-color bg2 #062820;     /* deep teal */
+@define-color bg3 #093a2d;     /* teal-green */
+@define-color bg4 #0d4f3d;     /* forest teal */
+@define-color bg5 #12684d;     /* medium green */
+@define-color bg6 #189166;     /* bright green */
+@define-color bg7 #2ed6a0;     /* neon mint */
+
+@define-color fg0 #d8fff7;     /* primary text */
+@define-color fg1 #b0f0e2;     /* muted mint */
+@define-color fg2 #c4f5e9;     /* light mint */
+@define-color fg3 #d3faf0;     /* soft mint-white */
+@define-color fg4 #e1fff6;     /* pale mint */
+@define-color fg5 #f0fffb;     /* near-white */
+@define-color fg6 #f8fffd;     /* brightest */
+@define-color fg7 #4f6b63;     /* inactive workspace */
+@define-color fg8 #35e0a8;     /* active/accent mint */
