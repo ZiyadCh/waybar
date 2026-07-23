@@ -19,7 +19,6 @@
     "clock"
   ],
   "modules-right": [
-    "keyboard-state",
     "custom/memory-arrow",
     "memory",
     "custom/audio-arrow",
@@ -175,14 +174,5 @@
     "format": " ⏻ ",
     "tooltip": false,
     "on-click": "wlogout -b 4 &"
-  },
-  "keyboard-state": {
-    "numlock": true,
-    "capslock": true,
-    "format": "  {layout} ",
-    "format-icons": {
-      "locked": "",
-      "unlocked": ""
-    }
   }
 }
